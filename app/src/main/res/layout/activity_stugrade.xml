@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".stugrade">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar3"
+        />
+    <EditText
+        android:id="@+id/et_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:background="#30ffffff"
+        android:drawablePadding="5dp"
+        android:hint="Last Name"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    <EditText
+        android:id="@+id/et_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_lastname"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="4dp"
+        android:background="#30ffffff"
+        android:drawablePadding="5dp"
+        android:hint="First Name"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/et_lastname"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_attendance"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="136dp"
+        android:drawablePadding="5dp"
+        android:text="Attendance"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/et_firstname"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <EditText
+        android:id="@+id/tv_attendance1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="5dp"
+        android:hint="input"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/tv_attendance"
+        app:layout_constraintTop_toBottomOf="@+id/et_firstname" />
+
+    <EditText
+        android:id="@+id/et_quiz1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="5dp"
+        android:hint="input"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/tv_quiz1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_attendance1" />
+
+    <EditText
+        android:id="@+id/et_quiz2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:hint="input"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/tv_quiz2"
+        app:layout_constraintTop_toBottomOf="@+id/et_quiz1" />
+
+    <EditText
+        android:id="@+id/et_quiz3"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="5dp"
+        android:hint="input"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/tv_quiz3"
+        app:layout_constraintTop_toBottomOf="@+id/et_quiz2" />
+
+    <EditText
+        android:id="@+id/et_quiz4"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="144dp"
+        android:inputType="number"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="5dp"
+        android:hint="input"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/tv_quiz4"
+        app:layout_constraintTop_toBottomOf="@+id/et_quiz3" />
+
+    <EditText
+        android:id="@+id/et_exam"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="5dp"
+        android:hint="input"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/tv_exam"
+        app:layout_constraintTop_toBottomOf="@+id/et_quiz4" />
+
+    <TextView
+        android:id="@+id/tv_quiz1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="136dp"
+        android:drawablePadding="5dp"
+        android:text="Quiz 1"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_attendance"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/tv_quiz2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="136dp"
+        android:drawablePadding="5dp"
+        android:text="Quiz 2"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz1"
+        tools:layout_editor_absoluteX="5dp" />
+    <TextView
+        android:id="@+id/tv_quiz3"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="136dp"
+        android:drawablePadding="5dp"
+        android:text="Quiz 3"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz2"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/tv_quiz4"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="136dp"
+        android:drawablePadding="5dp"
+        android:text="Quiz 4"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz3"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/tv_exam"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="136dp"
+        android:drawablePadding="5dp"
+        android:text="Examination"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz4"
+        tools:layout_editor_absoluteX="5dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/et_input3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="CONFIRM"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_exam" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
